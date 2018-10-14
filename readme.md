@@ -1,6 +1,6 @@
 - [Описание проекта](#Описание-проекта)
-    - [Часть №1](#Часть-№1)
-    - [Часть №12](#Часть-№2)
+    - [Часть №1](#Часть-1)
+    - [Часть №12](#Часть-2)
 - [Cтек](#Cтек)
     - [Дополнительно](#Дополнительно)
 - [Подготовка](#Подготовка)
@@ -50,8 +50,6 @@
 14. (-) Создайте структуру базы данных используя MySQL Workbench и сгенерируйте файл(ы) миграций с
 помощью Laravel / Symfony из существующей БД MySQL, или прямо из файла проекта MySQL Workbench.
 
-[без title](http://example.com/link)
-
 ## Cтек
 
 * [Laravel](https://github.com/laravel/laravel)
@@ -62,7 +60,7 @@
 
 * [baum/baum](https://github.com/etrepat/baum) - Baum is an implementation of the Nested Set pattern for Laravel 5's Eloquent ORM.
 * [fzaninotto/faker](https://github.com/fzaninotto/Faker) - Faker is a PHP library that generates fake data for you.
-* [axios] - https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+* [axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
 * [vuejs-datepicker](https://github.com/charliekassel/vuejs-datepicker) - A datepicker Vue component. Compatible with Vue 2.x
 * [v-autocomplete](https://github.com/paliari/v-autocomplete) - Autocomplete component for Vue.js
 * [v-debounce](https://github.com/vuejs-tips/v-debounce) - Input debounce directive for Vue.js
@@ -80,12 +78,25 @@
 * php artisan db:seed
 * npm run dev | npm run build
 
+В ENV доп 3 параметра для заполнения бд:
+
+EMP_COUNT_SEED=2000 // Кол-во сотрудников
+
+DIR_COUNT_SEED=1 // Кол-во директоров (root node)
+
+DEPTH_TREE=10 // Глубина дерева, кол-во уровней
+
 ## Пример
 test account:
-user: test@test.com
+
+user: test@gmail.com
+
 pass: 123456
 
-[Пример](https://rdmitry.000webhostapp.com/)
+[Пример](https://vuelaravel.000webhostapp.com)
+
+На данный момент не редактирование и создание новой записи работает только локально.
+На хостинге возникла ошибка.
 
 ## Список задач
 
@@ -103,4 +114,6 @@ pass: 123456
 * добавить тесты js кода
 * добавить кеширование
 * разобраться с автоматическим деплоем
+* Разобраться с ошибкой ( Uncaught (in promise) TypeError: Cannot read property 'data' of undefined
+    at app.js:1 )
 
