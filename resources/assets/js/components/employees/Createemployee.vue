@@ -99,7 +99,9 @@ import Datepicker from 'vuejs-datepicker';
 import {en, ru} from 'vuejs-datepicker/dist/locale';
 import moment from 'moment';
 import ParentTemplate from '../autocomplete/ParentTemplate.vue';
-import PositionTemplate from '../autocomplete/PositionTemplate.vue' 
+import PositionTemplate from '../autocomplete/PositionTemplate.vue';
+// import axios from 'axios';
+import axios from '../../libs/axios'; 
 
  export default {
     data: function () {

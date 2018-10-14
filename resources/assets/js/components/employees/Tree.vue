@@ -50,7 +50,8 @@
 // https://ru.vuejs.org/v2/examples/tree-view.html
 import TreeItem from './TreeItem.vue';
 import Employee from '../../models/EmployeeTreeItem';
-//import axios from '../../libs/axios';
+import axios from '../../libs/axios';
+//import axios from 'axios';
 
 export default {
     name: 'employees-tree',

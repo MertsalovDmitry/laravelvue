@@ -32,6 +32,8 @@
 </template>
 <script>
 // https://ru.vuejs.org/v2/examples/tree-view.html
+// import axios from 'axios';
+import axios from '../../libs/axios';
 
 export default {
     name: 'tree-item',

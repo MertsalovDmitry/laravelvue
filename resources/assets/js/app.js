@@ -5,9 +5,9 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router';
 window.Vue.use(VueRouter);
 
-import VueAxios from 'vue-axios';
-import axios from 'axios';
-Vue.use(VueAxios, axios);
+//import VueAxios from 'vue-axios';
+//import axios from 'axios';
+//Vue.use(VueAxios, axios);
 
 import Autocomplete from 'v-autocomplete';
 Vue.use(Autocomplete);

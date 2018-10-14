@@ -96,7 +96,9 @@ import Datepicker from 'vuejs-datepicker';
 import {en, ru} from 'vuejs-datepicker/dist/locale';
 import moment from 'moment';
 import ParentTemplate from '../autocomplete/ParentTemplate.vue';
-import PositionTemplate from '../autocomplete/PositionTemplate.vue'
+import PositionTemplate from '../autocomplete/PositionTemplate.vue';
+// import axios from 'axios';
+import axios from '../../libs/axios';
 
 export default {
     data: function () {
@@ -206,7 +208,8 @@ export default {
             app.employee.parent_id = app.parent.id;}
             app.employee.employed_at = app.employed_at;
             axios.patch('/employees/' + app.employee.id, app.employee)
-                 .then(({data}) => {
+                //  .then(({data}) => {
+                    .then(({}) => {
                     this.allerrors = [];
                     this.success = true;
                     //app.$router.replace('/list');
